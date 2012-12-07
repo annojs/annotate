@@ -1,0 +1,43 @@
+{
+    "name": "annotate.js",
+    "description": "Asserts your function invariants",
+    "author": "Juho Vepsalainen <bebraw@gmail.com>",
+    "version": "0.2.0",
+
+    "dependencies": {
+        "is-js": "== 0.1.1"
+    },
+
+    "devDependencies": {
+        "suite.js": "== 0.5.0",
+        "funkit": "== 0.5.1"
+    },
+
+    "scripts": {
+        "test": "node ./lib/tests.js"
+    },
+
+    "main": "./lib/annotate.js",
+
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:bebraw/annotate.js.git"
+    },
+
+    "directories": {
+        "lib": "./lib"
+    },
+
+    "homepage": "https://github.com/bebraw/annotate.js",
+
+    "bugs": {
+        "url": "https://github.com/bebraw/annotate.js/issues"
+    },
+
+    "keywords": ["testing", "utilities"],
+
+    "licenses": [{
+        "type": "MIT",
+        "url": "https://github.com/bebraw/annotate.js/blob/master/LICENSE"
+    }]
+}
