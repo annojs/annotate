@@ -38,7 +38,7 @@ function isPositive(a) {
 ```
 
 The `annotate` function will create a new function that contains the metadata as
-properties `\_name`, `\_doc` and `\_invariants`. In case an invariant does not
+properties `_name`, `_doc` and `_invariants`. In case an invariant does not
 pass during execution, it won't execute and gives a warning instead.
 
 ## Acknowledgements
