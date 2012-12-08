@@ -41,6 +41,10 @@ The `annotate` function will create a new function that contains the metadata as
 properties `\_name`, `\_doc` and `\_invariants`. In case an invariant does not
 pass during execution, it won't execute and gives a warning instead.
 
+## Acknowledgements
+
+* [Kris Jordan](http://krisjordan.com/)'s' [multimethod.js](http://krisjordan.com/multimethod-js) - Provided inspiration for the API
+
 ## License
 
 `annotate.js` is available under MIT. See LICENSE for more details.
