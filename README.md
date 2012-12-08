@@ -43,7 +43,7 @@ pass during execution, it won't execute and gives a warning instead.
 
 ## Acknowledgements
 
-* [Kris Jordan](http://krisjordan.com/)'s' [multimethod.js](http://krisjordan.com/multimethod-js) - Provided inspiration for the API
+* [Kris Jordan](http://krisjordan.com/)'s [multimethod.js](http://krisjordan.com/multimethod-js) - Provided inspiration for the API
 
 ## License
 
