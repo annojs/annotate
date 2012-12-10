@@ -41,6 +41,11 @@ The `annotate` function will create a new function that contains the metadata as
 properties `_name`, `_doc` and `_invariants`. In case an invariant does not
 pass during execution, it won't execute and gives a warning instead.
 
+## Related Projects
+
+* [suite.js](https://github.com/bebraw/suite.js) - Constructs tests based on invariant data (fuzzing)
+* [funkit](https://github.com/bebraw/funkit) - Collection of utilities tested using `annotate.js` and `suite.js`
+
 ## Acknowledgements
 
 * [Kris Jordan](http://krisjordan.com/)'s [multimethod.js](http://krisjordan.com/multimethod-js) - Provided inspiration for the API
