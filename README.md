@@ -51,8 +51,9 @@ function isPositive(a) {
 ```
 
 The `annotate` function will create a new function that contains the metadata as
-properties `_name`, `_doc` and `_invariants`. In case an invariant does not
-pass during execution, it won't execute and gives a warning instead.
+properties `_name`, `_doc`, `_preconditions` and `_postconditions`. In case
+some pre- or postcondition doesn't pass it won't return and gives a warning
+instead.
 
 ## Related Projects
 
