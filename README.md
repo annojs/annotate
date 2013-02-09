@@ -32,6 +32,10 @@ var fib = annotate('fib', 'Calculates Fibonacci numbers')
         return fib(n - 1) + fib(n - 2);
     });
 
+// furthermore it is possible to pass a variable amount of args
+var min = annotate('min', 'Returns minimum of the given numbers')
+    .on([is.number], Math.min);
+
 function isPositive(a) {
     return a >= 0;
 }
