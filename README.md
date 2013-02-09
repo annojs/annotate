@@ -32,6 +32,14 @@ var fib = annotate('fib', 'Calculates Fibonacci numbers')
         return fib(n - 1) + fib(n - 2);
     });
 
+// invariants may depend on each other
+var clamp = annotate('clamp', 'Clamps given number between given bounds')
+    .on(is.number, is.number, function(a, args) {
+        return is.number(a) && args[1] <= a;
+    }, function(a, min, max) {
+        return Math.max(Math.min(a, max), min);
+    });
+
 // furthermore it is possible to pass a variable amount of args
 var min = annotate('min', 'Returns minimum of the given numbers')
     .on([is.number], Math.min);
