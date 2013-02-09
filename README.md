@@ -23,7 +23,8 @@ var addStrings = annotate('addStrings', 'Adds strings')
 
 // you can assert invariants too
 var addPositive = annotate('addPositive', 'Adds positive')
-    .on(isPositive, isPositive, add);
+    .on(isPositive, isPositive, add)
+    .satisfies(isPositive); // postcondition
 
 // it is possible to chain guards
 var fib = annotate('fib', 'Calculates Fibonacci numbers')
