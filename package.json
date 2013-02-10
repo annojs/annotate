@@ -1,8 +1,8 @@
 {
-    "name": "annotate.js",
+    "name": "annotate",
     "description": "Asserts your function invariants",
     "author": "Juho Vepsalainen <bebraw@gmail.com>",
-    "version": "0.6.1",
+    "version": "0.6.2",
 
     "dependencies": {
         "is-js": "== 0.1.1"
