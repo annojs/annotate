@@ -1,6 +1,6 @@
 {
   "name": "annotate",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "main": "./lib/annotate.js",
   "dependencies": {
     "is": "scottrabin/is-js"
