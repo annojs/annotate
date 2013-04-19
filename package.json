@@ -9,8 +9,8 @@
     },
 
     "devDependencies": {
-        "suite.js": "== 0.5.4",
-        "funkit": "== 0.5.1"
+        "suite.js": "== 0.6.0",
+        "funkit": "== 0.7.7"
     },
 
     "scripts": {
