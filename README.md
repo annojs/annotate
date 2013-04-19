@@ -1,8 +1,8 @@
-# annotate.js - Asserts your function invariants
+# annotate - Annotate your JavaScript function definitions
 
-`annotate.js` allows you to attach certain metadata to your functions. For
-instance you could document invariants of your function this way. In
-addition you can attach an optional description you can access later on.
+`annotate` allows you to ... guess what ... annotate your functions. For
+instance you could document invariants of your function. Or attach a
+description to it. It is possible to access this data later on.
 
 This metadata can be used by tools such as [suite.js](https://github.com/bebraw/suite.js)
 in order to generate tests. In addition you can access the metadata via REPL.
@@ -66,5 +66,5 @@ instead.
 
 ## License
 
-`annotate.js` is available under MIT. See LICENSE for more details.
+`annotate` is available under MIT. See LICENSE for more details.
 
