@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/annojs/annotate)](http://travis-ci.org/annojs/annotate)
 # annotate - Annotate your JavaScript function definitions
 
 `annotate` allows you to ... guess what ... annotate your functions. For
