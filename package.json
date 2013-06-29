@@ -21,23 +21,23 @@
 
     "repository": {
         "type": "git",
-        "url": "git@github.com:bebraw/annotate.git"
+        "url": "git@github.com:annojs/annotate.git"
     },
 
     "directories": {
         "lib": "./lib"
     },
 
-    "homepage": "https://github.com/bebraw/annotate",
+    "homepage": "https://github.com/annojs/annotate",
 
     "bugs": {
-        "url": "https://github.com/bebraw/annotate/issues"
+        "url": "https://github.com/annojs/annotate/issues"
     },
 
     "keywords": ["testing", "utilities"],
 
     "licenses": [{
         "type": "MIT",
-        "url": "https://github.com/bebraw/annotate/blob/master/LICENSE"
+        "url": "https://github.com/annojs/annotate/blob/master/LICENSE"
     }]
 }
