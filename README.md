@@ -5,7 +5,7 @@
 instance you could document invariants of your function. Or attach a
 description to it. It is possible to access this data later on.
 
-This metadata can be used by tools such as [suite.js](https://github.com/bebraw/suite.js)
+This metadata can be used by tools such as [annofuzz](https://github.com/annojs/fuzz)
 in order to generate tests. In addition you can access the metadata via REPL.
 
 The usage is quite simple as the following example illustrates:
@@ -16,35 +16,35 @@ function add(a, b) {
     return a + b;
 }
 
-// type checkers from is-js (https://npmjs.org/package/is-js)
-var addNumbers = annotate('addNumbers', 'Adds numbers')
-    .on(is.number, is.number, add);
-var addStrings = annotate('addStrings', 'Adds strings')
-    .on(is.string, is.string, add);
+// type checkers from annois (https://npmjs.org/package/annois)
+var addNumbers = annotate('addNumbers', 'Adds numbers').
+    on(is.number, is.number, add);
+var addStrings = annotate('addStrings', 'Adds strings').
+    on(is.string, is.string, add);
 
 // you can assert invariants too
-var addPositive = annotate('addPositive', 'Adds positive')
-    .on(isPositive, isPositive, add)
-    .satisfies(isPositive); // postcondition
+var addPositive = annotate('addPositive', 'Adds positive').
+    on(isPositive, isPositive, add).
+    satisfies(isPositive); // postcondition
 
 // it is possible to chain guards
-var fib = annotate('fib', 'Calculates Fibonacci numbers')
-    .on(0, 0).on(1, 1)
-    .on(is.number, function(n) {
+var fib = annotate('fib', 'Calculates Fibonacci numbers').
+    on(0, 0).on(1, 1).
+    on(is.number, function(n) {
         return fib(n - 1) + fib(n - 2);
     });
 
 // invariants may depend on each other
-var clamp = annotate('clamp', 'Clamps given number between given bounds')
-    .on(is.number, is.number, function(a, args) {
+var clamp = annotate('clamp', 'Clamps given number between given bounds').
+    on(is.number, is.number, function(a, args) {
         return is.number(a) && args[1] <= a;
     }, function(a, min, max) {
         return Math.max(Math.min(a, max), min);
     });
 
 // furthermore it is possible to pass a variable amount of args
-var min = annotate('min', 'Returns minimum of the given numbers')
-    .on([is.number], Math.min);
+var min = annotate('min', 'Returns minimum of the given numbers').
+    on([is.number], Math.min);
 
 function isPositive(a) {
     return a >= 0;
