@@ -13,7 +13,7 @@
   "scripts": {
     "test": "node ./tests"
   },
-  "main": "./lib/annotate.js",
+  "main": "./lib",
   "repository": {
     "type": "git",
     "url": "git@github.com:annojs/annotate.git"
