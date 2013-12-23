@@ -1,8 +1,7 @@
-#!/usr/bin/env node
 var suite = require('suite.js');
 var is = require('annois');
 var partial = require('funkit').partial;
-var annotate = require('./annotate');
+var annotate = require('../');
 
 var noDispatch = annotate('noDispatch', 'No dispatch');
 
