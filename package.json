@@ -4,11 +4,11 @@
   "author": "Juho Vepsalainen <bebraw@gmail.com>",
   "version": "0.9.0",
   "dependencies": {
-    "annois": "~0.3.0"
+    "annois": "0.3.0"
   },
   "devDependencies": {
-    "suite.js": "== 0.6.0",
-    "funkit": "== 0.7.7"
+    "suite.js": "0.6.0",
+    "funkit": "0.7.8"
   },
   "scripts": {
     "test": "node ./tests"
