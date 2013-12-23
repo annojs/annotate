@@ -8,7 +8,8 @@
   },
   "devDependencies": {
     "suite.js": "0.6.0",
-    "funkit": "0.7.8"
+    "funkit": "0.7.8",
+    "annogenerate": "~0.6.2"
   },
   "scripts": {
     "test": "node ./tests"
