@@ -14,11 +14,12 @@ if(WARNINGS) {
 
 var addNumber = annotate('addNumber').on(is.number, add);
 aSuite(addNumber, '', [[is.number]], [], 'addNumber');
-suite(addNumber, [
-    [1, 'a'], '1a'
-]);
 
 if(WARNINGS) {
+    suite(addNumber, [
+        [1, 'a'], '1a'
+    ]);
+
     addNumber('foo', 'bar'); // should yield a warning
 }
 
@@ -26,6 +27,7 @@ var addNumbers = annotate('addNumbers', 'Adds numbers')
     .on(is.number, is.number, add)
     .satisfies(is.number);
 aSuite(addNumbers, 'Adds numbers', [[is.number, is.number]], [is.number], 'addNumbers');
+
 suite(addNumbers, [
     [1, 2], 3
 ]);
@@ -93,8 +95,6 @@ suite(clamp, function(op, a, min, max) {
 
 var min = annotate('min', 'Returns minimum of the given numbers')
     .on([is.number], Math.min);
-
-min(2, 3, 4); // ok
 
 if(WARNINGS) {
     min('a', 'b'); // should yield a warning
