@@ -70,6 +70,21 @@ if(WARNINGS) {
     fib('foobar'); // should yield a warning
 }
 
+var testObject = annotate('testObject', 'Tests object parameter after array')
+    .on([is.array], function(o) {
+        return o.reduce(function(a, b) {
+            return a + b;
+        });
+    })
+    .on(is.object, function(o) {
+        return 'object';
+    })
+
+suite(testObject, [
+    [[1, 2, 3]], 6,
+    {a: 5}, 'object'
+]);
+
 var clamp = annotate('clamp', 'Clamps given number between given bounds')
     .on(is.number, is.number, function(a, args) {
         return is.number(a) && args[1] <= a;
